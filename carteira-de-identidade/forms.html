@@ -3,16 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/forms.css">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <body>
-        <div class="titleDiv">
+        <!--<div class="titleDiv">
             <div class="titleDivText">
-                <h1>Carteirou</h1>
+                <h1 class="alfa-slab-one-regular">Carteirou</h1>
             </div>
         </div>
+        -->
 
+        <section class="container">
+            <header class="alfa-slab-one-regular">Formulário de cadastro</header>
+            <form action="#" class="forms">
+                <div class="input-box">
+                    <label>Nome Completo</label>
+                    <input type="text" placeholder="Digite seu nome completo">
+                </div>
+
+                <div class="input-box">
+                    <label>Data de Nascimento</label>
+                    <input type="date">
+                </div>
+
+                <div class="coluna">
+                    <div class="input-box">
+                        <label>CPF</label>
+                        <input type="text" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite seu CPF" required placeholder="000.000.000-00">
+                    </div>
+
+                    <div class="input-box">
+                        <label>RG</label>
+                        <input type="text" id="rg" pattern="\d{2}\.\d{3}\.\d{3}" title="Digite seu RG" required placeholder="00.000.000">
+                    </div>
+                </div>
+            </form>
+        </section>
 </body>
 </body>
 </html>
