@@ -23,26 +23,130 @@
             <header class="alfa-slab-one-regular">Formulário de cadastro</header>
             <form action="#" class="forms">
                 <div class="input-box">
-                    <label>Nome Completo</label>
-                    <input type="text" placeholder="Digite seu nome completo">
+                    <label>Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
                 </div>
 
                 <div class="input-box">
-                    <label>Data de Nascimento</label>
-                    <input type="date">
+                    <label>Data de Nascimento *</label>
+                    <input type="date" id="data" name="data" required>
                 </div>
 
                 <div class="coluna">
                     <div class="input-box">
-                        <label>CPF</label>
-                        <input type="text" id="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite seu CPF" required placeholder="000.000.000-00">
+                        <label>CPF *</label>
+                        <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite seu CPF" required placeholder="000.000.000-00">
                     </div>
 
                     <div class="input-box">
-                        <label>RG</label>
-                        <input type="text" id="rg" pattern="\d{2}\.\d{3}\.\d{3}" title="Digite seu RG" required placeholder="00.000.000">
+                        <label>RG *</label>
+                        <input type="text" id="rg" name="rg" pattern="\d{2}\.\d{3}\.\d{3}" title="Digite seu RG" required placeholder="00.000.000">
                     </div>
                 </div>
+                
+                
+                <div class="naturalidade">
+                    <h3>Naturalidade</h3>
+                    <div class="coluna">
+                        <div class="input-box">
+                            <label>Cidade *</label>
+                            <input type="text" id="cidade" name="cidade" title="Digite sua cidade" placeholder="ex.: Recife" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label>Estado *</label>
+                            <input type="text" id="estado" name="estado" title="Digite o estado que você reside" placeholder="ex.: Pernambuco" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filiacao">
+                    <h3>Filiação</h3>
+                    <div class="input-box">
+                        <label>Nome da Mãe *</label>
+                        <input type="text" id="nomeMae" name="nomeMae" placeholder="Caso seja ausente, escreva 'ausente'" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Nome do Pai *</label>
+                        <input type="text" id="nomePai" name="nomePai" placeholder="Caso seja ausente, escreva 'ausente'" required>
+                    </div>
+                </div>
+
+                <div class="gender-box">
+                    <h3>Gênero *</h3>
+                    <p>Com que gênero você se identifica?</p>
+                    <div class="gender-option">
+                        <div class="gender custom-radio">
+                            <input type="radio" id="check-hc" name="gender" checked>
+                            <label for="check-hc">Homem Cisgênero</label>
+                        </div>
+
+                        <div class="gender custom-radio">
+                            <input type="radio" id="check-mc" name="gender">
+                            <label for="check-mc">Mulher Cisgênero</label>
+                        </div>
+
+                        <div class="gender custom-radio">
+                            <input type="radio" id="check-ht" name="gender">
+                            <label for="check-ht">Homem Trans</label>
+                        </div>
+
+                        <div class="gender custom-radio">
+                            <input type="radio" id="check-mt" name="gender">
+                            <label for="check-mt">Mulher Trans</label>
+                        </div>
+
+                        <div class="gender custom-radio">
+                            <input type="radio" id="check-nb" name="gender">
+                            <label for="check-nb">Não-Binário</label>
+                        </div>
+
+                        <div class="gender custom-radio">
+                            <input type="radio" id="check-gf" name="gender">
+                            <label for="check-gf">Gênero Flúido</label>
+                        </div>
+
+                        <div class="gender custom-radio">
+                            <input type="radio" id="check-other" name="gender">
+                            <label for="check-other">Outro</label>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+                <div class="race-box">
+                    <h3>Raça *</h3>
+                    <p>Como você se identifica?</p>
+                    <div class="race-option">
+                        <div class="race custom-radio">
+                            <input type="radio" id="check-b" name="race" checked>
+                            <label for="check-b">Branco</label>
+                        </div>
+
+                        <div class="race custom-radio">
+                            <input type="radio" id="check-n" name="race" checked>
+                            <label for="check-n">Negro</label>
+                        </div>
+
+                        <div class="race custom-radio">
+                            <input type="radio" id="check-p" name="race" checked>
+                            <label for="check-p">Pardo</label>
+                        </div>
+
+                        <div class="race custom-radio">
+                            <input type="radio" id="check-a" name="race" checked>
+                            <label for="check-a">Amarelo</label>
+                        </div>
+
+                        <div class="race custom-radio">
+                            <input type="radio" id="check-i" name="race" checked>
+                            <label for="check-i">Indígena</label>
+                        </div>
+                    </div>
+                </div>
+                
             </form>
         </section>
 </body>

@@ -16,6 +16,13 @@ body {
     justify-content: center;
     position: relative;
     padding: 20px;
+    overflow-y: auto;
+}
+h3 {
+    padding: 0px;
+    position: relative;
+    margin-top: 23px;
+    color: rgb(9, 7, 50);
 }
 .container {
     position: relative; 
@@ -61,6 +68,45 @@ body {
     column-gap: 10px;
 }
 
+.forms :where(.custom-radio input, .custom-radio label){
+    cursor: pointer;
+}
+
+.gender-option .race-option{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+}
+
+.custom-radio {
+    position: relative;
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.custom-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.custom-radio label {
+    position: relative;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.custom-radio input[type="radio"]:checked + label {
+    background-color: #231a5a;
+    color: white;
+}
+
+.custom-radio label:hover {
+    background-color: #c8b0ff;
+}
+
 @media screen and (max-width: 500px){
     .forms .coluna {
         flex-wrap: wrap;
@@ -71,23 +117,3 @@ body {
     font-weight: 400;
     font-style: normal;
 }
-
-/*
-.titleDiv{
-    background-color: #e8e8ffff;
-    height: fit-content;
-    padding: 0px;
-    flex-direction: column;
-    border-radius: 10px;
-    opacity: 90%;
-}
-
-.titleDivText{
-    padding-left: 30px;
-    height: fit-content;
-    font-size: 30px;
-    color: #03064fff;
-    display: flex;
-    flex-direction: column;
-}
-    */
