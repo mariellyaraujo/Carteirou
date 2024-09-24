@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/forms.css">
+    <link rel="stylesheet" href="CSS/button.css">
     <title>Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +44,18 @@
                         <input type="text" id="rg" name="rg" pattern="\d{2}\.\d{3}\.\d{3}" title="Digite seu RG" required placeholder="00.000.000">
                     </div>
                 </div>
-                
+
+                <div class="coluna">
+                    <div class="input-box">
+                        <label>Orgão Expedidor *</label>
+                        <input type="text" id="orgaoex" name="orgaoex" placeholder="ex.: SDS/PE" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Data de Emissão *</label>
+                        <input type="date" id="dataemissao" name="dataemissao">
+                    </div>
+                </div>
                 
                 <div class="naturalidade">
                     <h3>Naturalidade</h3>
@@ -126,27 +138,78 @@
                         </div>
 
                         <div class="race custom-radio">
-                            <input type="radio" id="check-n" name="race" checked>
+                            <input type="radio" id="check-n" name="race">
                             <label for="check-n">Negro</label>
                         </div>
 
                         <div class="race custom-radio">
-                            <input type="radio" id="check-p" name="race" checked>
+                            <input type="radio" id="check-p" name="race">
                             <label for="check-p">Pardo</label>
                         </div>
 
                         <div class="race custom-radio">
-                            <input type="radio" id="check-a" name="race" checked>
+                            <input type="radio" id="check-a" name="race">
                             <label for="check-a">Amarelo</label>
                         </div>
 
                         <div class="race custom-radio">
-                            <input type="radio" id="check-i" name="race" checked>
+                            <input type="radio" id="check-i" name="race">
                             <label for="check-i">Indígena</label>
                         </div>
                     </div>
                 </div>
                 
+                <div class="endereco">
+                    <h3>Endereço *</h3>
+                    <div class="coluna">
+                        <div class="input-box">
+                            <label>CEP *</label>
+                            <input type="text" id="cep" name="cep" pattern="\d{5}\-\d{3}" title="Digite seu CEP" required placeholder="00000-000">
+                        </div>
+                        <div class="input-box">
+                            <label>Estado *</label>
+                            <input type="text" id="estado" name="estado" title="Digite o estado que você reside" placeholder="ex.: Pernambuco" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Cidade *</label>
+                            <input type="text" id="cidade" name="cidade" title="Digite sua cidade" placeholder="ex.: Recife" required>
+                        </div>
+                    </div>
+                    <div class="coluna">
+                        <div class="input-box">
+                            <label>Bairro *</label>
+                            <input type="text" id="bairro" name="bairro" title="Digite seu bairro" placeholder="ex.: Recife Antigo" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Rua *</label>
+                            <input type="text" id="rua" name="rua" title="Digite sua rua" placeholder="ex.:Rua do Bom Jesus" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Número *</label>
+                            <input type="number" id="numerocasa" name="numerocasa" title="Digite o número da sua casa" placeholder="" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tipo-sanguineo">
+                    <h3>Tipo Sanguíneo</h3>
+                    <p><i>opcional</i></p>
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Escolha...</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="botaoForms alfa-slab-one-regular">Enviar</button>
             </form>
         </section>
 </body>

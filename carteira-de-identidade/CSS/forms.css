@@ -51,7 +51,7 @@ h3 {
 .input-box label {
     color: #03064fff;
 }
-.forms .input-box input{
+.forms :where(.input-box input, .select-box) {
     position: relative;
     height: 50px;
     width: 100%;
@@ -62,6 +62,15 @@ h3 {
     font-size: 15px;
     color: #03064fff;
     margin-top: 7px;
+}
+.select-box select{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    color: #231a5a;
+    font-size: 15px;
+    background-color: #e8e8ffff;
 }
 .forms .coluna {
     display: flex;
@@ -81,7 +90,7 @@ h3 {
 .custom-radio {
     position: relative;
     padding-left: 5px;
-    margin: 0px;
+    margin: 3px;
 }
 
 .custom-radio input[type="radio"] {
@@ -92,19 +101,23 @@ h3 {
 .custom-radio label {
     position: relative;
     padding: 10px 15px;
-    background-color: #f0f0f0;
+    background-color: #e5e0f8;
     border-radius: 8px;
     display: inline-block;
     transition: background-color 0.3s;
 }
 
 .custom-radio input[type="radio"]:checked + label {
-    background-color: #231a5a;
+    background-color: rgb(31, 26, 177);
     color: white;
 }
 
 .custom-radio label:hover {
-    background-color: #c8b0ff;
+    background-color: #bdc1e8;
+}
+.tipo-sanguineo :where(input, .select-box){
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 500px){
