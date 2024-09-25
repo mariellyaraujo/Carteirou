@@ -18,39 +18,39 @@ body{
 }
 .analu {
     background-image: url('carteirou-images/analu.png');
-    background-position: left bottom; /* Imagem 1 à esquerda e embaixo */
+    background-position: left bottom;
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1; /* Fica abaixo das outras imagens */
+    z-index: 1; 
 }
 
 .joaquim {
     background-image: url('carteirou-images/joaquim.png');
-    background-position: right bottom; /* Imagem 2 à direita e embaixo */
+    background-position: right bottom; 
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1; /* Fica abaixo das outras imagens */
+    z-index: 1; 
 }
 
 .felipeEAmanda {
     background-image: url('carteirou-images/juncao.png');
-    background-position: center bottom; /* Imagem 3 no centro e embaixo */
-    background-size: auto; /* Ajusta a imagem para cobrir o espaço */
+    background-position: center bottom; 
+    background-size: auto; 
     background-repeat: no-repeat;
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 2; /* Fica acima das outras imagens */
+    z-index: 2; 
 }
 
 .content {
     position: relative;
-    z-index: 3; /* Fica acima das imagens de fundo */
-    color: white; /* Cor do texto */
+    z-index: 3; 
+    color: white; 
     text-align: center;
     padding: 35px;
     display: flex;
