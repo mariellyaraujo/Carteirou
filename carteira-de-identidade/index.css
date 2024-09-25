@@ -1,0 +1,76 @@
+/* CSS HEX 
+--federal-blue: #03064fff;
+--lavender-web: #e8e8ffff;
+--black-bean: #390c0bff;
+--burnt-umber: #763120ff;
+--sinopia: #bf532cff;
+--fawn: #f1ae7dff;
+--light-coral: #f06e6eff;
+--mustard: #ffdd56ff;
+*/
+
+body{
+    background-color: #03064fff;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;   
+}
+.analu {
+    background-image: url('carteirou-images/analu.png');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; 
+}
+
+.joaquim {
+    background-image: url('carteirou-images/joaquim.png');
+    background-position: right bottom; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1; 
+}
+
+.felipeEAmanda {
+    background-image: url('carteirou-images/juncao.png');
+    background-position: center bottom; 
+    background-size: auto; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2; 
+}
+
+.content {
+    position: relative;
+    z-index: 3; 
+    color: white; 
+    text-align: center;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.carteirouText {
+    font-size: 140px;
+    width: 850px;
+    height: 180px;
+    background: #03064fff;
+    text-align: center;
+    opacity: 90%;
+    border: 3px;
+    border-radius: 80px;
+    
+}
