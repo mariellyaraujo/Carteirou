@@ -10,6 +10,7 @@
 */
 
 body{
+    background-image: url(carteirou-images/bg.png);
     background-color: #03064fff;
     margin: 0;
     height: 100vh;
