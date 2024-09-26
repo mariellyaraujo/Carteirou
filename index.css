@@ -16,6 +16,21 @@ body{
     overflow: hidden;
     position: relative;   
 }
+h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    background-color: #e8e8ffff;
+    border-radius: 80px;
+    width: 720px;
+    height: 90px;
+    margin: 0 auto;
+    margin-top: -50px;
+    color: #03064fff;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 .analu {
     background-image: url('carteirou-images/analu.png');
     background-position: left bottom;
