@@ -16,6 +16,7 @@ body{
     height: 100vh;
     overflow: hidden;
     position: relative;   
+    box-sizing: border-box;
 }
 h2 {
     font-family: "Poppins", sans-serif;
@@ -31,6 +32,7 @@ h2 {
     justify-content: center;
     align-items: center; 
     cursor: default;
+    opacity: 80%;
 }
 
 .analu {

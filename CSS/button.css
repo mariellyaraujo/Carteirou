@@ -41,6 +41,7 @@
 }
 
 .botaoFinal {
+    position: absolute;
     display: flex;
     width: 140px;
     height: 50px;
@@ -50,15 +51,15 @@
     color: #03064fff;
     font-size: 30px;
     text-align: center;
-    margin: 0;
     justify-content: center;
     cursor: pointer;
-    padding-top: 5px;
-    margin-left: 50px;
-    margin-top: 5px;
+    text-decoration: none;
+    z-index: 4;
+    margin-top: 10px;
+    margin-left: 10px;
 }
+
 .botaoFinal:hover {
     transform: scale(1.07);
     color: rgb(31, 26, 177);
-
 }
