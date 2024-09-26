@@ -29,6 +29,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center; 
+    cursor: default;
 }
 
 .analu {
@@ -87,5 +88,5 @@ h2 {
     opacity: 90%;
     border: 3px;
     border-radius: 80px;
-    
+    cursor: default;
 }

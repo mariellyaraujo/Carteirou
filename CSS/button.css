@@ -40,3 +40,25 @@
     background-color: rgb(31, 26, 177);
 }
 
+.botaoFinal {
+    display: flex;
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 80px;
+    background-color: #e8e8ffff;
+    color: #03064fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+    margin-left: 50px;
+    margin-top: 5px;
+}
+.botaoFinal:hover {
+    transform: scale(1.07);
+    color: rgb(31, 26, 177);
+
+}
